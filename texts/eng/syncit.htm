@@ -1,0 +1,119 @@
+<style>
+.t td 
+{
+  padding:5px 5px 15px 5px;
+}
+</style>
+
+<table class="t" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td align="center" valign="top"><img src="http://anjlab.com/misc/Logos/SyncIT.jpg"/>
+</td>
+<td>
+
+
+<p>
+This project is about tasks management. People use two common types of tasks\time management systems - collective and personal. These approaches do not conflict to each other, they are just differently. The goal is to synchronize tasks information between personal and collective storages.
+</p>
+<p>
+Good example of personal organizer is Microsoft Outlook 2007 It is powerful tool, which, in addition to mail management, provides ability to organize your time with Tasks and Calendar features.
+</p>
+<p>
+We have started with the collective systems we use daily routine ourselves. List of supported systems is expended month from months. For now they are:
+<ul>
+<li>
+<a href="http://trac.edgewall.org" target="_new">Trac</a> is an enhanced wiki and issue tracking system for software development projects. Trac uses a minimalistic approach to web-based software project management.
+</li>
+<li>
+<a href="http://code.google.com" target="_new">Google Code</a> runs a project hosting service that provides revision control using Subversion , an issue tracker, a wiki for documentation, and a file download feature. The service is available and free for all Open Source projects.
+</li>
+<li>
+<a href="http://dotproject.net/" target="_new">dotProject</a> the open source project management tool. dotProject as an open source alternative to 
+Microsoft products and other expensive, commercial applications. 
+</li>
+<li><a href="http://http://v8.1c.ru/eng/" target="_new">1C:Enterprise 8</a> system of programs is intended for automation of everyday enterprise activities: various business tasks of economic and management activity, such as management accounting, business accounting, HR management, CRM, SRM, MRP, MRP, etc.
+</li>
+</ul>
+
+More supported systems are coming soon.
+</p>
+<p>
+SyncIT is small program located at Windows tray. It periodically checks defined task sources (projects) for new\updated tasks assigned to you, and creates tasks at your Outlook (Outlook may not be running at this time). If synchronized ticket is closed or re-assigned, it also will be marked as closed at Outlook. New imported task is assigned to category defined for task source.
+</p>
+<p>
+The following information is used for synchronization:
+<ul>
+
+<li>Title. project (source) name is included as prefix to task title in Outlook;</li>
+<li>Priority;</li>
+<li>Ticket body;</li>
+<li>Some additional attributes like Milestone, Version, Component are saved as part of body;</li>
+</ul>
+
+We have some ideas how to improve this tool. For instance,
+<ul>
+<li>Extend list of supported systems;</li>
+<li>Bi-directional synchronization, changing tickets when Outlook task is modified;</li>
+<li>Ability to close tickets via Outlook;</li>
+<li>Support for Trac comments, ability to add comments via Outlook;</li>
+<li>And so on...</li>
+</ul>
+</p>
+
+</td>
+</tr>
+
+</tr>
+<tr><td valign="top"><b>Thanks</b></td>
+<td>
+The project is developed and supported by <a href="http://anjlab.com" target="_new">AnjLab Team</a>. Special thanks to <a href="http://dmitrygusev.blogspot.com" target="_new">Dmitry Gusev</a> and <a href="http://pchelnikov.blogspot.com/" target="_top">Mikhail Pchelnikov</a> who took big part in the project.
+</td></tr>
+
+
+<tr><td valign="top"><b>Success stories</b></td>
+<td>
+<p><b>Client:</b>  <a href="http://www.rkdv.ru/" target="_new">Businessinterwest</a>, Khabarovsk, Russia</p>
+<p><b>Business:</b>  automation of recreation and entertainment companies</p>
+<p><b>Problem:</b> all information about Businessinterwest's clients and related tasks is located at enterprise data storage built on 1C Enterprise ERP system. Clients are served by mobile agents which use iPhones for accessing required information. The task is to synchronize events stored at iPone Calendar and task list at corporate storage.</p>
+
+<p><b>Solution:</b> there is no solution which allows to synchronize iPhone with 1C Enterprise directly. That is why we used intermediate synchronization points. They are Microsoft Outlook 2007 and Google Calendar. 
+
+<a href="/misc/screenshots/biw-eng.jpg"><img src="/misc/screenshots/biw-eng-small.jpg"/></a>
+
+Standard tools are used to exchange data between Outlook and Google Calendar and between Google Calendar and iPhone. Synchronization between tasks list at 1C Enterprise and Outlook Calendar is performed with AnjLab.SyncIT. For this purpose we develop additional SyncIT functionality which allows to choose information receiver in Outlook - tasks list or calendar, and define template to generate event description.</p>
+</td>
+</tr>
+
+<tr><td valign="top"><b>Downloads</b></td>
+<td>
+<p>
+This is open source project, it is absolutely free and can be used as is. You can modify source code to fit your needs, and, if you wish, take part in further development. 
+<ul>
+<li><a href="http://outlooktrac.googlepages.com" target="new">Project page at 
+Google Code</a></li>
+<li><a href="http://code.google.com/p/outlooktrac/downloads/list" target="_new">The latest release</a></li>
+<li> <a href="http://code.google.com/p/outlooktrac" target="_new">Source code</a></li>
+</ul>
+</p>
+</td>
+</tr>
+
+<tr><td valign="top"><b>Technical details</b></td>
+<td>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><td><b>Operating system</b><td>Windows</td></tr>
+<tr><td><b>Platform</b><td>.NET 3.5</td></tr>
+<tr><td><b>Technologies</b><td>WPF, COM</td></tr>
+<tr><td><b>Language</b><td>C#</td></tr>
+</table>
+</td></tr>
+
+
+<tr><td valign="top"><b>Screens</b></td>
+<td>
+<a href="http://anjlab.com/misc/screenshots/outlooktrac1-small.jpg" target="_new"><img src="http://anjlab.com/misc/screenshots/outlooktrac1-small.jpg"></a>
+<br/><a href="http://anjlab.com/misc/screenshots/outlooktrac1-small.jpg" target="_new">Synchronization settings.</a>
+</td></tr>
+</table>
+

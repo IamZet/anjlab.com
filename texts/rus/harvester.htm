@@ -1,0 +1,65 @@
+<style>
+.t td 
+{
+  padding:5px 5px 15px 5px;
+}
+</style>
+
+<table class="t" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td align="center" valign="top"><img src="/misc/Logos/Harvester.jpg"></td>
+<td>
+
+<p>Harvester это система  сбора и хранения данных о предложениях, имеющихся на онлайновых торговых площадках, таких как Amazon, Half и других (поддерживается 22 торговые площадки). Система собирает информацию о товарах и предложениях в циклическом режиме, собранные данные могут быть использованы для дальнейшего анализа.</p>
+ 
+<p>Harvester реализован как многокомпонентная, распределенная и масштабируемая система. Она состоит из центрального управляющего компонента (tracker) и набора агентов (scanners), выполняющих наборы задач (jobs).  Система может быть легко масштабирована благодаря возможности легко изменять число работающих агентов, а так же перераспределять задачи между ними. Используемый подход позволяет оперативно отслеживать устранять <узкие места>  при работе системы. Более того, Harvester  это саморегулируемая система и может динамически изменять свою конфигурацию в зависимости от заданных <целей> и текущей ситуации.</p>
+
+<p>Harvester спроектирован для максимального использования механизмов виртуализации, система может использовать сети виртуальных машин, либо  "облачные вычисления" (computing clouds),  в частности, <a href="http://www.amazon.com/gp/browse.html?node=201590011" target="_new">Amazon Elastic Computing Cloud</a>. Архитектура системы позволяет адаптировать ее к сбору любой структурированной информации в Интернет.</p>
+
+</td>
+</tr>
+
+<tr><td valign="top"><b>Техническая информация</b></td>
+<td>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><td><b>Операционная система</b><td>Linux (Ubuntu)</td></tr>
+<tr><td><b>Платформа</b><td>Ruby on Rails 2.1</td></tr>
+<tr><td><b>Язык програмирования</b><td>Ruby</td></tr>
+<tr><td><b>Сервер баз данных</b><td>MySQL 5.0</td></tr>
+</table>
+</td></tr>
+
+
+<tr style="display:none"><td valign="top"><b>Внедрения</b></td>
+<td>
+<p>
+<a href="http://www.betterworldbooks.com" target="_new"><img src="/misc/Logos/bwb-small.gif"></a>
+<b>Заказчик:</b><a href="http://www.betterworldbooks.com" target="_new"> BetterWorldBooks</a>, штат Индиана, США. 
+</p>
+<p>
+<b>Бизнес: </b>сбор новых и подержанных книг и их перепродажа через интернет. Продажи осуществляются на 19 рынках, включая <a href="http://www.amazon.com" target="_new">Amazon.com</a>, <a href="http://www.ebay.com" target="_new">Ebay</a>,  и собственный магазин  <a href="http://www.betterworld.com" target="_new">betterworld.com</a>
+</p>
+<p><b>Внедрение: </b>Начиная с 2008 года, BetterWorldBooks использует Harvester для сбора всех предложений на продажу книг, размещенных на интернет площадках. Собранная информация используется для:
+<ul>
+<li>Расчета цен на книги, выставляемых на продажу;</li>
+<li>Расчета цен на покупку книг для дальнейшей перепродажи ( <a href="http://www.betterworldbooks.com/buyback.aspx" target="_new">Buy Back Program</a>);</li>
+<li>Покупки книг с использованием системы <a href="/en/projects/hunter" target="_new"> Hunter</a>;</li>
+<li>Дальнейшего анализа с помощью средств OLAP, выявления трендов и определения тактики компании;</li>
+</ul>
+</p>
+</td>
+</tr>
+
+<tr style="display:none"><td valign="top"><b>Скриншоты</b></td>
+<td>
+<p><a href="/misc/screenshots/Harvester.jpg" target="new"><img src="/misc/screenshots/Harvester-small.jpg"></a>
+Harvester Administrative web interface.</p>
+
+<p><a href="/misc/screenshots/Harvester1.jpg" target="new"><img src="/misc/screenshots/Harvester1-small.jpg"></a>
+<p align="center">Harvester Job Monitor.</p>
+</td></tr>
+
+
+</table>
+

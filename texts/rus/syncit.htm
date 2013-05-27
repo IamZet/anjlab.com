@@ -1,0 +1,89 @@
+<style>
+.t td 
+{
+  padding:5px 5px 15px 5px;
+}
+</style>
+
+<table class="t" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td align="center" valign="top"><img src="/misc/Logos/SyncIT.jpg"/>
+</td>
+<td>
+<p>Коллективная работа немыслима без средств, позволяющих управлять задачами, распределять их между участниками команды, отслеживать изменения. Для этого используются модули трэкинга задач таких популярных систем коллективной работы, как Trac, Team Foundation Server, Salesforce и т.д. В то же время, человеку удобнее хранить все свои задачи, как личные, так и служебные, в персональном органайзере на своем компьютере или КПК. Для этой цели хорошо подходит MS Outlook 2007. </p>
+
+<p>Между этими подходами нет противоречия, задача  в том, чтобы синхронизировать "коллективное" и "персональное" хранилища задач. Эта проблема может быть решена с помощью нашей разработки SyncIT. Это маленькая программа, постоянно запущенная в system tray, которая периодически загружает информацию о новых \ изменившихся задачах из "коллективного" хранилища в "персональное" - список задач Outlook 2007. При этом, сам Outlook может быть не запущен.</p>
+
+<p>В текущей версии поддерживаются следующие источники задач:
+<ul> 
+<li><a href="http://trac.edgewall.org" target="_new">Trac</a></li>
+<li><a href="http://code.google.com" target="_new">Google Code</a></li>
+<li><a href="http://www.dotproject.net/" target="_new"">dotProject</a></li>
+<li><a href="http://www.v8.1c.ru/" target="_new"">1C Предприятие</a></li>
+</ul>
+В дальнейшем планируется расширить набор поддерживаемых источников. Планируется так же реализация обратной синхронизации - публикация на сервере изменений, произведенных с помощью Outlook. </p>
+
+</td>
+</tr>
+
+</tr>
+<tr><td valign="top"><b>Благодарности</b></td>
+<td>
+Мы благодарим <a href="http://dmitrygusev.blogspot.com" target="_new">Дмитрия Гусева</a> и <a href="http://pchelnikov.blogspot.com/" target="_top">Михаила Пчельникова</a> за активное участие в работе над проектом.
+</td>
+</tr>
+
+<tr><td valign="top"><b>Downloads</b></td>
+<td>
+<p>
+Это проект с открытым кодом (open source). Вы можете использовать продукт "as is", модифицировать его под свои задачи, а, если есть желание, участвовать в разработке и развитии проекта.  Ждем ваших замечаний и предложений.
+<ul>
+<li><a href="http://outlooktrac.googlepages.com" target="new">Страница проекта на Google Code</a></li>
+<li><a href="http://code.google.com/p/outlooktrac/downloads/list" target="_new">Релизы</a></li>
+<li> <a href="http://code.google.com/p/outlooktrac" target="_new">Исходный код</a></li>
+</ul>
+</p>
+</td>
+</tr>
+
+<tr><td valign="top"><b>Внедрения</b></td>
+<td>
+<p><b>Заказчик:</b>  <a href="http://www.rkdv.ru/" target="_new">Бизнесинтервест</a>, г. Хабаровск</p>
+<p><b>Сфера деятельности:</b>  автоматизация индустрии отдыха и развлечений</p>
+<p><b>Задача автоматизации:</b> вся информация по клиентам Бизнесинтервест  и задачи по ним находятся в корпоративном хранилище данных на основе 1С Предприятия 8. Обслуживание клиентов осуществляют мобильные агенты, использующие iPhone для доступа к необходимой информации.  Задача состоит в том, чтобы синхронизировать задачи в календаре iPhone со списком задач в корпоративном хранилище.</p>
+<p><b>Решение:</b> поскольку решения, позволяющего напрямую синхронизировать данные между 1С и iPhone, пока не существует, был выбран вариант с использованием календарей MS Outlook 2007 и Google Calendar. 
+
+<a href="/misc/screenshots/biw.jpg"><img src="/misc/screenshots/biw-small.jpg"/></a>
+
+Для обмена информацией между Outlook и Google Calendar, а так же между Google Calendar и iPhone Calendar, использованы стандартные средства.  Синхронизация между списком событий в 1С Предприятие и календарем Outlook осуществляется с помощью AnjLab.SyncIT. Для этой цели была разработана дополнительная функциональность SyncIT, позволяющая выбирать приемник данных Outlook (список задач либо календарь) и шаблон для формирования текста задачи.</p>
+</td>
+</tr>
+
+<tr><td valign="top"><b>Техническая информация</b></td>
+<td>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><td><b>Операционная система</b><td>Windows</td></tr>
+<tr><td><b>Платформа</b><td>.NET 3.5</td></tr>
+<tr><td><b>Технологии</b><td>WPF, COM</td></tr>
+<tr><td><b>Язык програмирования</b><td>C#</td></tr>
+</table>
+</td></tr>
+
+
+<tr><td valign="top"><b>Скриншоты</b></td>
+<td>
+<a href="/misc/screenshots/outlooktrac1.jpg" target="_new"><img src="/misc/screenshots/outlooktrac1-small.jpg"></a>
+<a href="/misc/screenshots/outlooktrac1.jpg" target="_new">Настройка синхронизации.</a>
+
+<p>
+<object type="application/x-shockwave-flash" width="500" height="334" data="http://www.vimeo.com/moogaloop.swf?clip_id=915989&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color="> <param name="quality" value="best" /> <param name="allowfullscreen" value="true" /> <param name="scale" value="showAll" /> <param name="movie" value="http://www.vimeo.com/moogaloop.swf?clip_id=915989&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=" /></object><br />
+Видеоролик: синхронизация с задачами 1С Предприятие 8.0.
+</p>
+
+
+</td></tr>
+
+
+</table>
+
